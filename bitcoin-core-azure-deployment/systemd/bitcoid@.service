@@ -1,0 +1,23 @@
+[Unit]
+Description=Bitcoin's [%i] distributed currency daemon
+After=network.target
+
+[Service]
+User=bitcoin-%i
+Group=bitcoin-%i
+Type=forking
+PIDFile=/var/lib/bitcoind/bitcoind_%i.pid
+ExecStart=/usr/local/bin/bitcoind -daemon -pid=/var/lib/bitcoind/bitcoind_%i.pid -conf=/etc/bitcoin/%i.conf -datadir=/var/lib/bitcoind
+Restart=on-failure
+PrivateTmp=true
+ProtectSystem=full
+NoNewPrivileges=true
+PrivateDevices=true
+MemoryDenyWriteExecute=true
+TimeoutStopSec=60s
+TimeoutStartSec=2s
+StartLimitInterval=120s
+StartLimitBurst=5
+
+[Install]
+WantedBy=multi-user.target

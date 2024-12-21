@@ -1,0 +1,25 @@
+To include the `wget` command in your VS Code project, you can create a script file (e.g., a shell script) that handles the download. Here’s how you can do it:
+
+1. **Create a Script File**:
+   - In your VS Code project, create a new file named `download_bitcoin_core.sh`.
+
+2. **Add the `wget` Command**:
+   - Open `download_bitcoin_core.sh` and add the following content:
+     ```bash
+     #!/bin/bash
+     wget https://bitcoincore.org/bin/bitcoin-core-28.0/bitcoin-28.0-x86_64-linux-gnu.tar.gz
+     ```
+
+3. **Make the Script Executable**:
+   - Open your terminal and navigate to your project directory. Run the following command to make the script executable:
+     ```bash
+     chmod +x download_bitcoin_core.sh
+     ```
+
+4. **Run the Script**:
+   - You can now run the script from your terminal:
+     ```bash
+     ./download_bitcoin_core.sh
+     ```
+
+This approach keeps your project organized and allows you to easily manage and execute the download command. If you have any more questions or need further assistance, feel free to ask!
