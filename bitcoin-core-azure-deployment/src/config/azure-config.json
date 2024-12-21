@@ -1,0 +1,15 @@
+{
+  "subscriptionId": "your-subscription-id",
+  "resourceGroupName": "your-resource-group-name",
+  "location": "your-location",
+  "vmName": "your-vm-name",
+  "vmSize": "Standard_DS1_v2",
+  "adminUsername": "your-admin-username",
+  "adminPassword": "your-admin-password",
+  "imagePublisher": "Bitcoin",
+  "imageOffer": "Bitcoin",
+  "imageSku": "latest",
+  "networkInterfaceName": "your-nic-name",
+  "publicIpName": "your-public-ip-name",
+  "securityGroupName": "your-nsg-name"
+}

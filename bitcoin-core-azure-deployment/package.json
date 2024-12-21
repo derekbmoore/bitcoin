@@ -1,0 +1,21 @@
+{
+  "name": "bitcoin-core-azure-deployment",
+  "version": "1.0.0",
+  "description": "Automating the deployment of a Bitcoin Core full node on Azure.",
+  "main": "src/deploy.js",
+  "scripts": {
+    "deploy": "node src/deploy.js",
+    "setup": "bash scripts/setup.sh"
+  },
+  "dependencies": {
+    "@azure/arm-compute": "^10.0.0",
+    "@azure/arm-resource": "^10.0.0",
+    "@azure/ms-rest-nodeauth": "^4.0.0",
+    "bitcoin-core": "^2.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^7.0.0"
+  },
+  "author": "Your Name",
+  "license": "MIT"
+}
